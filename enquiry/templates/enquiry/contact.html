@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact | The Event Project</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial;
+      background: #f6f4ef;
+    }
+
+    .navbar {
+      background-color: #f2efe8;
+      color: #0a1a3c;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar a {
+      color: #0a1a3c;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 17px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 60px auto;
+      background: white;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    h2 {
+      color: #0a1a3c;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="navbar">
+  <img src="{% static 'logo.png' %}" alt="Logo" height="55">
+  <div>
+    <a href="/">Home</a>
+    <a href="/enquiry/">Enquiry</a>
+    <a href="/contact/">Contact</a>
+  </div>
+</div>
+
+<div class="container">
+  <h2>Contact Us</h2>
+  <p><b>Owner:</b> Naman Gupta</p>
+  <p><b>Phone:</b> +91 98689 90746</p>
+  <p><b>Email:</b> theeventproject@gmail.com</p>
+</div>
+
+</body>
+</html>
